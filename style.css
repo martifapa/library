@@ -112,7 +112,7 @@ header {
     opacity: 0;
     transition: 0.2s all ease-out;
 }
-.add-book__pop-up:hover {
+.popup-active {
     opacity: 1;
     transform: translateY(30px);
 }
