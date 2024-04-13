@@ -40,26 +40,26 @@
             </fieldset>
             <fieldset class="full-row">
                 <label for="author">Author</label>
-                <input type="text">
+                <input type="text" name="author" id="author">
             </fieldset>
             <fieldset class="full-row">
                 <label for="add-genres">Genres</label>
                 <select name="add-genres" id="add-genres">
-                    <option value="">option1</option>
-                    <option value="">option2</option>
-                    <option value="">option3</option>
+                    <option value="option1">option1</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
                 </select>
             </fieldset>
             <fieldset>
-                <label for="pages">Pages</label>
-                <input type="number" min="0" step="1">
+                <label for="numPages">Pages</label>
+                <input type="number" name="numPages" id="numPages" min="0" step="1">
             </fieldset>
             <fieldset class="special">
                 <label for="isRead">Read</label>
-                <input type="checkbox">
+                <input type="checkbox" id="isRead">
             </fieldset>
-            <button id="submitBookForm">Save</button>
-            <button id="cancelBookForm">Cancel</button>
+            <button type="button" id="submitBookForm">Save</button>
+            <button type="button" id="cancelBookForm">Cancel</button>
         </form>
     </header>
 
@@ -67,11 +67,9 @@
         <div class="main__filters">
             <p class="section-title">Filter books</p>
             <div class="filter">
-                <label for="filter-genre">Genre</label>
-                <select name="filter-genre" id="filter-genre">
-                    <option value="">option1</option>
-                    <option value="">option2</option>
-                    <option value="">option3</option>
+                <label for="filter-genres">Genre</label>
+                <select name="filter-genres" id="filter-genres">
+                    <option value="">All</option>
                 </select>
             </div>
             <div class="filter">
@@ -98,41 +96,54 @@
                 <div>Read</div>
                 <div>Actions</div>
             </div>
-            <div class="table-row">
-                <div class="data-title">title title title</div>
-                <div class="data-author">author author</div>
-                <div class="data-pages">123</div>
-                <div class="data-genres">Horror, fantasy</div>
-                <div class="data-isRead"><span class="material-symbols-outlined">check</span></div>
-                <div class="actions">
-                    <span class="material-symbols-outlined">edit</span>
-                    <span class="material-symbols-outlined">delete</span>
+            <div class="table-content">
+                <div class="table-row">
+                    <div class="data-title">title title title</div>
+                    <div class="data-author">author author</div>
+                    <div class="data-pages">123</div>
+                    <div class="data-genres">Horror, fantasy</div>
+                    <div class="data-isRead"><span class="material-symbols-outlined">check</span></div>
+                    <div class="actions">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="table-row">
-                <div class="data-title">title title title</div>
-                <div class="data-author">author author</div>
-                <div class="data-pages">123</div>
-                <div class="data-genres">Horror, fantasy</div>
-                <div class="data-isRead"><span class="material-symbols-outlined">close</span></div>
-                <div class="actions">
-                    <span class="material-symbols-outlined">edit</span>
-                    <span class="material-symbols-outlined">delete</span>
+                <div class="table-row">
+                    <div class="data-title">title title title</div>
+                    <div class="data-author">author author</div>
+                    <div class="data-pages">123</div>
+                    <div class="data-genres">Horror, fantasy</div>
+                    <div class="data-isRead"><span class="material-symbols-outlined">close</span></div>
+                    <div class="actions">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="data-title">title title title</div>
+                    <div class="data-author">author author</div>
+                    <div class="data-pages">123</div>
+                    <div class="data-genres">Horror, fantasy</div>
+                    <div class="data-isRead"><span class="material-symbols-outlined">close</span></div>
+                    <div class="actions">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="table-controls">
             <p>Showing 1 to 50 from 342 results</p>
             <ul>
-                <li><a href="">Next</a></li>
+                <li id="next-page"><a href="">Next</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li>...</li>
                 <li><a href="">7</a></li>
-                <li><a href="">Previous</a></li>
+                <li id="previous-page"><a href="">Previous</a></li>
             </ul>
         </div>
     </main>
+    <footer>Footer</footer>
 </body>
 </html>
